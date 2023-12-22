@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: backend-mongodb-deployment
   labels:
-    app: backend-mongodb-deployment
+    app: backend-mongodb
 spec:
   replicas: 1
   selector:
@@ -38,7 +38,7 @@ metadata:
   name: backend-mongodb
 spec:
   selector:
-    app: backend-mongodb-deployment
+    app: backend-mongodb
   ports:
     - protocol: TCP
       port: 27017
