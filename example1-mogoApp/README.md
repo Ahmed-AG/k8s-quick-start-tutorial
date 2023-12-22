@@ -15,3 +15,8 @@ kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongo
 kubectl apply -f example1-mogoApp/backend-mongo-db.yaml
 ```
 
+
+```bash
+kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
+```
+

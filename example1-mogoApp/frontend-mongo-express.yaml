@@ -26,7 +26,7 @@ spec:
               name: mongodb-secret
               key: mongo-username
         - name: ME_CONFIG_MONGODB_ADMINPASSWORD
-         valueFrom: 
+          valueFrom: 
             secretKeyRef:
               name: mongodb-secret
               key: mongo-password
