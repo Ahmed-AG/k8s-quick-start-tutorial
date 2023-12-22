@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend-mongo-express-deployment
   labels:
-    app: frontend-mongo-express-deployment
+    app: frontend-mongo-express
 spec:
   replicas: 1
   selector:
@@ -42,7 +42,7 @@ metadata:
   name: frontend-mongo-express
 spec:
   selector:
-    app: frontend-mongo-express-deployment
+    app: frontend-mongo-express
   type: LoadBalancer  
   ports:
     - protocol: TCP
