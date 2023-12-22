@@ -23,7 +23,7 @@ kubectl apply -f example1-mogoApp/mongodb-configmap.yaml
 kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
 ```
 
-``bash
+```bash
 kubectl apply -f example1-mogoApp/backend-mongo-db.yaml
 kubectl apply -f example1-mogoApp/mongodb-configmap.yaml
 kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
