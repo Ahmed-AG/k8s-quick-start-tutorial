@@ -30,5 +30,5 @@ kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
 ```
 
 ```bash
-minikube service mongo-express
+minikube service frontend-mongo-express
 ```
