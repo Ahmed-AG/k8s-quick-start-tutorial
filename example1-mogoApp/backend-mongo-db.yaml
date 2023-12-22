@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mongodb
+        app: backend-mongodb
     spec:
       containers:
       - name: backend-mongodb
