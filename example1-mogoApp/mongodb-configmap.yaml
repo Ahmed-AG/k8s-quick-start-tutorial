@@ -3,5 +3,4 @@ kind: ConfigMap
 metadata:
   name: mongodb-configmap
 data:
-  # database_url: backend-mongodb-service
-  database_url: 10.103.52.178
+  database_url: backend-mongodb
