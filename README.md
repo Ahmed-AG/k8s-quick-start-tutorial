@@ -5,64 +5,75 @@
 # MiniKube
 ### install hyperhit and minikube
 
-`brew install minikube`
+bash
+brew install minikube
+kubectl
+minikube
 
-`kubectl`
-
-`minikube`
 ### create minikube cluster
-`minikube start --vm-driver=hyperkit`
+```bash
+minikube start --vm-driver=hyperkit
 
-`kubectl get nodes`
+kubectl get nodes
 
-`minikube status`
+minikube status
 
-`kubectl version`
+kubectl version
+```
 
 ### delete cluster and restart in debug mode
-`minikube delete`
+```bash
+minikube delete
 
-`minikube start`
+minikube start
 
-`minikube status`
+minikube status
+```
 
 # Basic commands
 
 
 ### kubectl commands
-`kubectl get nodes`
+```bash
+kubectl get nodes
 
-`kubectl get pod`
+kubectl get pod
 
-`kubectl get services`
+kubectl get services
 
-`kubectl create deployment nginx --image=nginx`
+kubectl create deployment nginx --image=nginx
 
-`kubectl get deployment`
+kubectl get deployment
 
-`kubectl get replicaset`
+kubectl get replicaset
 
-`kubectl edit deployment nginx`
+kubectl edit deployment nginx
+```
 
 ### Logs
-`kubectl logs <pod-name>`
+```bash
+kubectl logs <pod-name>
+```
 
 ### Exec commands
-`kubectl exec -it <pod-name> -- bin/bash`
-
+```bash
+kubectl exec -it <pod-name> -- bin/bash
+```
 
 ### create or edit config file
-`vim nginx.yaml`
+```bash
+vim nginx.yaml
 
-`kubectl apply -f nginx.yaml`
+kubectl apply -f nginx.yaml
 
-`kubectl get pod`
+kubectl get pod
 
-`kubectl get deployment`
-
+kubectl get deployment
+```
 ### delete with config
-`kubectl delete -f nginx.yaml`
-
+```bash
+kubectl delete -f nginx.yaml
+```
 # Deployments and Services
 
 # Example Application 1
