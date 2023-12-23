@@ -26,15 +26,20 @@ Kubernetes, often abbreviated as K8s, is an open-source container orchestration 
 - Etcd: A distributed key-value store that stores the cluster's configuration data, representing the state of the cluster at any given time.
 
 These components work together to ensure that applications run efficiently, are scalable, and can easily be managed in a containerized environment.
+
 # MiniKube
-### install hyperhit and minikube
+Minikube is a tool that allows you to run a single-node Kubernetes cluster locally on your computer. It's designed to enable developers to learn and experiment with Kubernetes or to develop applications locally before deploying them to a larger Kubernetes cluster.
+
+## Install minikube
+
+[https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
 
 bash
 brew install minikube
 kubectl
 minikube
 
-### create minikube cluster
+## create minikube cluster
 ```bash
 minikube start --vm-driver=hyperkit
 
