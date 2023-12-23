@@ -51,7 +51,7 @@ Run the help to learn about the basic commands:
 ```bash
 kubectl -h
 ```
-```
+```bash
 kubectl controls the Kubernetes cluster manager.
 
  Find more information at: https://kubernetes.io/docs/reference/kubectl/
@@ -69,19 +69,58 @@ Basic Commands (Intermediate):
   delete          Delete resources by file names, stdin, resources and names, or by resources and label selector
 ...
 ```
+Notice that we can create, delete, get and describe resources. We will later work with the following resources:
+- Pods: An abstraction over a container run time such as Docker
+- Deployments: we dont directly work with pods instead we create deployments that could have multple pods doing the same task
+- Services: Provide way to access a set of deployments (and so pods), typically through an endpoint (IP Adress and Names)
+- ConfigMaps: We will use ConfigmMps to store information that is needed accross deployments
+- Secrets: Very similar to ConfigMaps except it is meant for secret values. We will use Secrets to store Database credentials.
 
-### kubectl commands
+
+## Exploration
 ```bash
 kubectl get nodes
 
-kubectl get pod
-
 kubectl get services
 
+kubectl get pod
+```
+## 
+Let us create a deployment. The following command will instruct K8s to create a deployment and a pod with nginx docker container image `nginx`. It will set alot of defaults as well
+
+```bash
 kubectl create deployment nginx --image=nginx
+```
+Let us explore the deployment we created. Run the following command:
 
+```bash
 kubectl get deployment
+```
 
+```bash
+NAME                                READY   UP-TO-DATE   AVAILABLE   AGE
+nginx                               1/1     1            1           14s
+```
+
+We can also explore more:
+```bash
+kubectl get pods
+```
+```bash
+NAME                                                READY   STATUS    RESTARTS   AGE
+nginx-7854ff8877-6wq4n                              1/1     Running   0          3m23s
+```
+
+```bash
+kubectl get pods -o wide
+```
+```bash
+NAME                                                READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+nginx-7854ff8877-6wq4n                              1/1     Running   0          5m11s   10.244.0.31   minikube   <none>           <none>
+```
+
+
+```bash
 kubectl get replicaset
 
 kubectl edit deployment nginx
