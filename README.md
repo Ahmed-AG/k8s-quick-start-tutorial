@@ -5,7 +5,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 # Concepts and components
 Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform. It automates the deployment, scaling, and management of containerized applications. Originally developed by Google, Kubernetes has gained widespread adoption in managing containerized workloads and services.
 
-## Basic Components include:
+## Basic Components:
 
 - Pods: The smallest deployable unit in Kubernetes, consisting of one or more containers that share storage and networking. They're scheduled together on the same node. It is an abstraction over the container run time, Docker for
 
