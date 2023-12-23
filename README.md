@@ -32,23 +32,8 @@ Minikube is a tool that allows you to run a single-node Kubernetes cluster local
 
 ## Install minikube
 
+Follow the steps in the here to install and start Minikube
 [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
-
-bash
-brew install minikube
-kubectl
-minikube
-
-## create minikube cluster
-```bash
-minikube start --vm-driver=hyperkit
-
-kubectl get nodes
-
-minikube status
-
-kubectl version
-```
 
 ### delete cluster and restart in debug mode
 ```bash
