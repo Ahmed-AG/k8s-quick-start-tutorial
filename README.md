@@ -2,10 +2,10 @@
 
 Welcome to this quick start tutorial about Kubertenes (k8s).
 
-# Concepts and components
+# Intorduction
 Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform. It automates the deployment, scaling, and management of containerized applications. Originally developed by Google, Kubernetes has gained widespread adoption in managing containerized workloads and services.
 
-## Basic Components:
+## Basic Kubernetes Components:
 
 - Pods: The smallest deployable unit in Kubernetes, consisting of one or more containers that share storage and networking. They're scheduled together on the same node. It is an abstraction over the container run time, Docker for
 
@@ -27,25 +27,20 @@ Kubernetes, often abbreviated as K8s, is an open-source container orchestration 
 
 These components work together to ensure that applications run efficiently, are scalable, and can easily be managed in a containerized environment.
 
-# MiniKube
+## MiniKube
 Minikube is a tool that allows you to run a single-node Kubernetes cluster locally on your computer. It's designed to enable developers to learn and experiment with Kubernetes or to develop applications locally before deploying them to a larger Kubernetes cluster.
 
-## Install minikube
+### Install Minikube
 
-Follow the steps in the here to install and start Minikube
-[https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
+Follow the steps in the here to install and start Minikube: [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)
 
-### delete cluster and restart in debug mode
-```bash
-minikube delete
 
-minikube start
+## kubectl
 
-minikube status
-```
+`kubectl` is the command-line interface (CLI) used to interact with Kubernetes clusters. It allows users to execute commands against Kubernetes clusters to deploy applications, manage and inspect cluster resources, and perform various administrative tasks.
 
-# Basic commands
 
+# Lab 1: Basic `kubectl` commands
 
 ### kubectl commands
 ```bash
@@ -91,3 +86,9 @@ kubectl delete -f nginx.yaml
 # Deployments and Services
 
 # Example Application 1
+
+# Cleanup 
+
+```bash
+minikube delete
+```
