@@ -117,7 +117,7 @@ We can use the `-o wide` option:
 kubectl get pods -o wide
 ```
 
-```bash
+```
 NAME                                                READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
 nginx-7854ff8877-6wq4n                              1/1     Running   0          5m11s   10.244.0.31   minikube   <none>           <none>
 ```
