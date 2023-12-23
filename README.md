@@ -77,16 +77,7 @@ Notice that we can create, delete, get and describe resources. We will later wor
 - Secrets: Very similar to ConfigMaps except it is meant for secret values. We will use Secrets to store Database credentials.
 
 
-## Exploration
-```bash
-kubectl get nodes
-
-kubectl get services
-
-kubectl get pod
-```
-## 
-Let us create a deployment. The following command will instruct K8s to create a deployment and a pod with nginx docker container image `nginx`. It will set alot of defaults as well
+1 - Let us create a deployment. The following command will instruct K8s to create a deployment and a pod with nginx docker container image `nginx`. It will set alot of defaults as well
 
 ```bash
 kubectl create deployment nginx --image=nginx
@@ -122,6 +113,32 @@ NAME                                                READY   STATUS    RESTARTS  
 nginx-7854ff8877-6wq4n                              1/1     Running   0          5m11s   10.244.0.31   minikube   <none>           <none>
 ```
 
+We can also `describe` resources using the command `kubectl describe pods <POD-NAME>`:
+
+```bash
+kubectl describe pods nginx-7854ff8877-6wq4n
+```
+```
+Name:             nginx-7854ff8877-6wq4n
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.59.100
+Start Time:       Fri, 22 Dec 2023 19:34:20 -0600
+Labels:           app=nginx
+                  pod-template-hash=7854ff8877
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.31
+IPs:
+  IP:           10.244.0.31
+Controlled By:  ReplicaSet/nginx-7854ff8877
+Containers:
+  nginx:
+    Container ID:   docker://455c96e8e59fb29fd3aabe439de64c9e0b1b1de0dc691fd0389afbdab382a025
+    Image:          nginx
+...
+```
 
 ```bash
 kubectl get replicaset
