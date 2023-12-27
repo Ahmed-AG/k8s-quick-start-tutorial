@@ -2,7 +2,7 @@
 
 Welcome to this quick start tutorial about Kubertenes (k8s).
 
-# Learn from an Example: Building a Frontend and Backend sample application 
+# Learning Example: Building a Frontend and Backend sample application 
 ## Detailed Track:
 
 Follow the following labs to build the application:
@@ -33,12 +33,3 @@ minikube service frontend-mongo-express
 ```bash
 minikube delete
 ```
-
-
-<------>
-
-### delete with config
-```bash
-kubectl delete -f nginx.yaml
-```
-
