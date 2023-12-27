@@ -2,7 +2,18 @@
 
 Welcome to this quick start tutorial about Kubertenes (k8s).
 
-# Learning Example: Building a Frontend and Backend sample application 
+## Learning Objectives
+- Learn basic Kubernetes commands
+- Understand the different Kubernetes component
+- Build a sample Frontend and Backend apllication using Kubernetes
+
+## Prerequisites
+
+- Basic familiarity with Linux Bash commands
+- Basic Familiarity with Containers
+- Any Viritual Machine
+
+# Building a Frontend and Backend sample application 
 ## Detailed Track:
 
 Follow the following tasks to build the application:
