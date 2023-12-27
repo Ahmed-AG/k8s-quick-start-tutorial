@@ -17,10 +17,11 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 ## Detailed Track:
 
 Follow the following tasks to build the application:
-- [Task 0](./task0.md)
-- [Task 1](./task1.md)
-- [Task 2](./task2.md)
-- [Task 4](./task4.md)
+- [Task 0: Set up you testing envinoment](./task0.md)
+- [Task 1: Basic `kubectl` commands](./task1.md)
+- [Task 2: Building a sample application](./task2.md)
+- [Task 3: Create the backend](./task3.md)
+- [Task 4: Create the frontend](./task4.md)
 
 ## Fast Track:
 Given that you have a K8s envinroment set, these are the commands needed to build the entire application:
