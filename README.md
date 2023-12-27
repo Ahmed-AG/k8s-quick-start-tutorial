@@ -2,7 +2,7 @@
 
 Welcome to this quick start tutorial about Kubertenes (k8s).
 
-# Example: Building a Frontend and Backend sample application 
+# Learn from an Example: Building a Frontend and Backend sample application 
 ## Detailed Track:
 
 Follow the following labs to build the application:
@@ -13,7 +13,7 @@ Follow the following labs to build the application:
 - [Lab 4](./lab4.md)
 
 ## Fast Track:
-These are the commands needed to build the entire application:
+Given that you have a K8s envinroment set, these are the commands needed to build the entire application:
 ### Create the secret (DB Username and Password)
 ```bash
 kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass
