@@ -28,7 +28,7 @@ Kubernetes, often abbreviated as K8s, is an open-source container orchestration 
 These components work together to ensure that applications run efficiently, are scalable, and can easily be managed in a containerized environment.
 
 # Example: Building a Frontend and Backend sample application 
-## Detailed track:
+## Detailed Track:
 
 Follow the following labs to build the application:
 - [Lab 0](./lab0.md)
@@ -76,5 +76,4 @@ kubectl get deployment
 ```bash
 kubectl delete -f nginx.yaml
 ```
-# Deployments and Services
 

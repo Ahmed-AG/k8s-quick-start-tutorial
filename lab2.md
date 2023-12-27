@@ -1,4 +1,4 @@
-# LAB 2: Building a sample application
+# Lab 2: Building a sample application
 
 Kubernetes support building infrastrucure using configuration files. K8s configuration files are YAML or JSON files used to define and manage Kubernetes resources, such as pods, deployments, services, etc. These files contain specifications that describe the desired state of the resources you want to create or modify within a Kubernetes cluster.
 
@@ -27,8 +27,11 @@ To do that, we will use three different configration files as follows:
 We will begin with creating the secret.
 
 # Creating the secret:
+`Secrets` are a way to securely store sensitive information, such as passwords, tokens, or keys. They're designed to help manage sensitive data access within Kubernetes deployments. Secrets provide a layer of abstraction and security by encoding and storing sensitive information separately from pod definitions or application code.
 
-Both the backend and the frontend will need this secret, on the backend we will need to set the username and password of the Database. And on the front end we will need to configure the right username and password to be used.
+Kubernetes secrets can be used by referencing them in pods or containers, allowing applications to access sensitive information without exposing it directly within the code or configuration files. Secrets are stored within the cluster etcd and can be accessed by authorized entities.
+
+Both the backend and the frontend will need to access the secret we will create. On the backend we will need to set the username and password of the Database. And on the front end we will need to configure the right username and password to be used.
 
 So, we will create two secrets:
 - mongo-username
