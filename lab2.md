@@ -6,9 +6,9 @@ Here are some key components and sections commonly found in Kubernetes configura
 -Kind: Defines the type of Kubernetes resource being created, such as Pod, Deployment, Service, etc.
 - Metadata: Contains information like the name, labels, and annotations for the resource.
 - Spec: Describes the desired state of the resource. This section varies based on the resource type. For example:
-    Pods: Contains specifications for containers, volumes, and other settings.
-    Deployments: Includes information about replicas, pod templates, update strategies, etc.
-    Services: Defines how the service should be exposed, its ports, selectors, etc.
+  - Pods: Contains specifications for containers, volumes, and other settings.
+  - Deployments: Includes information about replicas, pod templates, update strategies, etc.
+  - Services: Defines how the service should be exposed, its ports, selectors, etc.
 
 - Selectors: Often used in conjunction with services or controllers to define how resources are associated or targeted.
 
