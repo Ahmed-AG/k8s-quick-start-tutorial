@@ -5,7 +5,7 @@ Run the help to learn about the basic commands:
 ```bash
 kubectl -h
 ```
-```{: .bash .no-copy}
+```{.no-copy}
 kubectl controls the Kubernetes cluster manager.
 
  Find more information at: https://kubernetes.io/docs/reference/kubectl/
