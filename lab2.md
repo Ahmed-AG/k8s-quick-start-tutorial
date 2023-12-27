@@ -20,4 +20,45 @@ In this example, we will build a sample application that consists of the followi
 - A Mongo-express as the front end. Accessiable from the outside and consits of one Pod
 
 To do that, we will use three different configration files as follows:
-- [backend-mongo-db.yaml](./example1-mongoApp/backend-mongo-db.yaml)
+- [./example1-mongoApp/backend-mongo-db.yaml](./example1-mongoApp/backend-mongo-db.yaml): Will create a Deployment and a Service for the backend
+- [./example1-mongoApp/frontend-mongo-express.yaml](./example1-mongoApp/frontend-mongo-express.yaml): Will create a Deployment and a Service for the frontend
+- [./example1-mongoApp/mongodb-configmap.yaml](./example1-mongoApp/mongodb-configmap.yaml): Will create ConfigMap that will have the backend's name
+- Finally We will create `sectret` that has the Database user name and password. We will do that though the command line
+
+# Creating the secret:
+
+Both the backend and the frontend will need this secret, on the backend we will need to set the username and password of the Database. And on the front end we will need to configure the right username and password to be used.
+
+So, we will create two secrets:
+- mongo-username
+- mongo-password
+Because we want to be able to do this in a pipeline, we chose to use the kubectl to create the secrets. Run the following (you can choose your password):
+
+```bash
+kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass
+```
+To verify that the above was successful:
+```bash
+kubectl get secrets
+```
+```
+NAME             TYPE     DATA   AGE
+mongodb-secret   Opaque   2      5d
+```
+You can also run:
+```bash
+kubectl describe secrets mongodb-secret
+```
+```
+Name:         mongodb-secret
+Namespace:    default
+Labels:       <none>
+Annotations:  <none>
+
+Type:  Opaque
+
+Data
+====
+mongo-password:  9 bytes
+mongo-username:  9 bytes
+```
