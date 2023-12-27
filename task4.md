@@ -102,4 +102,4 @@ The above commmand will expose `frontend-mongo-express` service and give it a pu
 
 You can access the frontend by poiting your broswer to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
 ![Firefox-mongoexpress](images/screenshot-firefox-mongoexpress.png)
-
+Congratulations! Your Application is built!
