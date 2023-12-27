@@ -1,4 +1,4 @@
-# Lab Create the backend
+# Lab 3: Create the backend
 
 The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us disect it.
 This file will create two resources:
@@ -73,3 +73,9 @@ spec:
 ```
 
 Notice that we used the `app: backend-mongodb` as a selector and we exposed the same port `27017`. Notice also that we dont have anything that dictates wether we should expose access to this service externally. The default is that we will not.
+
+## Apply the Backend
+
+```bash
+kubectl apply -f example1-mogoApp/backend-mongo-db.yaml
+```
