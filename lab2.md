@@ -20,4 +20,4 @@ In this example, we will build a sample application that consists of the followi
 - A Mongo-express as the front end. Accessiable from the outside and consits of one Pod
 
 To do that, we will use three different configration files as follows:
-- [./example1-mongoApp/backend-mongo-db.yaml](backend-mongo-db.yaml)
+- [backend-mongo-db.yaml](./example1-mongoApp/backend-mongo-db.yaml)
