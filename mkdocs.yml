@@ -1,0 +1,5 @@
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - assets/css/custom.css
