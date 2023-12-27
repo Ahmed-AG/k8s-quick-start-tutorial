@@ -98,5 +98,6 @@ kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
 minikube service frontend-mongo-express
 ```
 The above commmand will expose `frontend-mongo-express` service and give it a public IP address
-![alt text](images/screenshot-minikube-expose.png?raw=true)
+![Minikube exposing frontend-mongo-express](images/screenshot-minikube-expose.png?raw=true)
+![Firefox-mongoexpress](images/screenshot-firefox-mongoexpress.png?raw=true)
 
