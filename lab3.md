@@ -1,9 +1,9 @@
 # Lab Create the backend
 
-The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us disect it
+The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us disect it.
 This file will create two resources:
-- A Deployment for the backend
-- A Service for that backend
+- A `Deployment` for the backend
+- A `Service` for that backend
 
 ## Backend Deployment
 
