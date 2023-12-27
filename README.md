@@ -18,7 +18,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 
 Follow the following tasks to build the application:
 - [Task 0: Set up you testing envinoment](./task0.md)
-- [Task 1: Basic `kubectl` commands](./task1.md)
+- [Task 1: Basic kubectl commands](./task1.md)
 - [Task 2: Building a sample application](./task2.md)
 - [Task 3: Create the backend](./task3.md)
 - [Task 4: Create the frontend](./task4.md)
