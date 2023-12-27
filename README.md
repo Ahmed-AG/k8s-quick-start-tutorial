@@ -5,12 +5,11 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 # Learning Example: Building a Frontend and Backend sample application 
 ## Detailed Track:
 
-Follow the following labs to build the application:
-- [Lab 0](./lab0.md)
-- [Lab 1](./lab1.md)
-- [Lab 2](./lab2.md)
-- [Lab 3](./lab3.md)
-- [Lab 4](./lab4.md)
+Follow the following tasks to build the application:
+- [Task 0](./task0.md)
+- [Task 1](./task1.md)
+- [Task 2](./task2.md)
+- [TTask 4](./task4.md)
 
 ## Fast Track:
 Given that you have a K8s envinroment set, these are the commands needed to build the entire application:
