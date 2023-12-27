@@ -45,6 +45,7 @@ kubectl get deployment
 ```
 
 ```bash
+$kubectl get deployment
 NAME                                READY   UP-TO-DATE   AVAILABLE   AGE
 nginx                               1/1     1            1           14s
 ```
@@ -54,6 +55,7 @@ We can also explore more:
 kubectl get pods
 ```
 ```bash
+$ kubectl get pods
 NAME                                                READY   STATUS    RESTARTS   AGE
 nginx-7854ff8877-6wq4n                              1/1     Running   0          3m23s
 ```
@@ -65,6 +67,7 @@ kubectl get pods -o wide
 ```
 
 ```
+$ kubectl get pods -o wide
 NAME                                                READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
 nginx-7854ff8877-6wq4n                              1/1     Running   0          5m11s   10.244.0.31   minikube   <none>           <none>
 ```
@@ -75,6 +78,7 @@ We can also `describe` resources using the command `kubectl describe pods <POD-N
 kubectl describe pods nginx-7854ff8877-6wq4n
 ```
 ```
+$ kubectl describe pods nginx-7854ff8877-6wq4n
 Name:             nginx-7854ff8877-6wq4n
 Namespace:        default
 Priority:         0
@@ -103,6 +107,7 @@ So far we have created one `deployment` and one `pod`. Use the following to exec
 kubectl exec nginx-7854ff8877-6wq4n -- uname -a
 ```
 ```
+$ kubectl exec nginx-7854ff8877-6wq4n -- uname -a
 Linux nginx-7854ff8877-6wq4n 5.10.57 #1 SMP Tue Nov 7 06:51:54 UTC 2023 x86_64 GNU/Linux
 ```
 
@@ -111,6 +116,7 @@ We can also get a shell on a container:
 kubectl exec -ti nginx-7854ff8877-6wq4n -- /bin/bash
 ```
 ```
+$ kubectl exec -ti nginx-7854ff8877-6wq4n -- /bin/bash
 root@nginx-7854ff8877-6wq4n:/# uname -a
 Linux nginx-7854ff8877-6wq4n 5.10.57 #1 SMP Tue Nov 7 06:51:54 UTC 2023 x86_64 GNU/Linux
 root@nginx-7854ff8877-6wq4n:/# 
@@ -121,6 +127,7 @@ Finally, we can read logs from a pod using `kubectl logs <pod-name>`
 kubectl logs nginx-7854ff8877-6wq4n
 ```
 ```
+$ kubectl logs nginx-7854ff8877-6wq4n
 /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
 /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
