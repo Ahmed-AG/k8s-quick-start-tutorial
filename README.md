@@ -9,7 +9,7 @@ Follow the following tasks to build the application:
 - [Task 0](./task0.md)
 - [Task 1](./task1.md)
 - [Task 2](./task2.md)
-- [TTask 4](./task4.md)
+- [Task 4](./task4.md)
 
 ## Fast Track:
 Given that you have a K8s envinroment set, these are the commands needed to build the entire application:
