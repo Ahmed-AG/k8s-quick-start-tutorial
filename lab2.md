@@ -1,5 +1,6 @@
-# LAB 2: deployment files
-Kubernetes configuration files are YAML or JSON files used to define and manage Kubernetes resources, such as pods, deployments, services, etc. These files contain specifications that describe the desired state of the resources you want to create or modify within a Kubernetes cluster.
+# LAB 2: Building a sample application
+
+Kubernetes support building infrastrucure using configuration files. K8s configuration files are YAML or JSON files used to define and manage Kubernetes resources, such as pods, deployments, services, etc. These files contain specifications that describe the desired state of the resources you want to create or modify within a Kubernetes cluster.
 
 Here are some key components and sections commonly found in Kubernetes configuration files:
 - API Version: Specifies the version of the Kubernetes API that the object uses.
@@ -9,9 +10,7 @@ Here are some key components and sections commonly found in Kubernetes configura
   - Pods: Contains specifications for containers, volumes, and other settings.
   - Deployments: Includes information about replicas, pod templates, update strategies, etc.
   - Services: Defines how the service should be exposed, its ports, selectors, etc.
-
 - Selectors: Often used in conjunction with services or controllers to define how resources are associated or targeted.
-
 - Annotations: Additional information or metadata that can be added to the resource for various purposes like documentation, tooling, etc.
 
 # Build a sample application
@@ -23,7 +22,9 @@ To do that, we will use three different configration files as follows:
 - [./example1-mongoApp/backend-mongo-db.yaml](./example1-mongoApp/backend-mongo-db.yaml): Will create a Deployment and a Service for the backend
 - [./example1-mongoApp/frontend-mongo-express.yaml](./example1-mongoApp/frontend-mongo-express.yaml): Will create a Deployment and a Service for the frontend
 - [./example1-mongoApp/mongodb-configmap.yaml](./example1-mongoApp/mongodb-configmap.yaml): Will create ConfigMap that will have the backend's name
-- Finally We will create `sectret` that has the Database user name and password. We will do that though the command line
+- Finally, we will create `sectret` that has the Database user name and password. We will do that though the command line
+
+We will begin with creating the secret.
 
 # Creating the secret:
 
