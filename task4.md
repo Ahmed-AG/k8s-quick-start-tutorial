@@ -99,5 +99,7 @@ minikube service frontend-mongo-express
 ```
 The above commmand will expose `frontend-mongo-express` service and give it a public IP address
 ![Minikube exposing frontend-mongo-express](images/screenshot-minikube-expose.png)
+
+You can access the frontend by poiting your broswer to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
 ![Firefox-mongoexpress](images/screenshot-firefox-mongoexpress.png)
 
