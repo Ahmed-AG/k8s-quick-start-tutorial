@@ -62,16 +62,6 @@ minikube delete
 
 <------>
 
-### create or edit config file
-```bash
-vim nginx.yaml
-
-kubectl apply -f nginx.yaml
-
-kubectl get pod
-
-kubectl get deployment
-```
 ### delete with config
 ```bash
 kubectl delete -f nginx.yaml
