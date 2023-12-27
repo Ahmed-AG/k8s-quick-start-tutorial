@@ -13,3 +13,11 @@ Here are some key components and sections commonly found in Kubernetes configura
 - Selectors: Often used in conjunction with services or controllers to define how resources are associated or targeted.
 
 - Annotations: Additional information or metadata that can be added to the resource for various purposes like documentation, tooling, etc.
+
+# Build a sample application
+In this example, we will build a sample application that consists of the following:
+- A MongoDB as the back end and. Accessable only for the front end and consists of one Pod
+- A Mongo-express as the front end. Accessiable from the outside and consits of one Pod
+
+To do that, we will use three different configration files as follows:
+- (backend-mongo-db.yaml)[/example1-mongoApp/backend-mongo-db.yaml]
