@@ -46,6 +46,7 @@ To verify that the above was successful:
 kubectl get secrets
 ```
 ```
+$ kubectl get secrets
 NAME             TYPE     DATA   AGE
 mongodb-secret   Opaque   2      5d
 ```
@@ -54,6 +55,7 @@ You can also run:
 kubectl describe secrets mongodb-secret
 ```
 ```
+$ kubectl describe secrets mongodb-secret
 Name:         mongodb-secret
 Namespace:    default
 Labels:       <none>
