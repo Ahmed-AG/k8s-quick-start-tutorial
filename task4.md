@@ -1,4 +1,4 @@
-# Task 4: Create the frontend
+# Task 4: Create the Frontend
 ## Configmap
 A ConfigMap in Kubernetes is an object used to store configuration data in key-value pairs. It provides a way to decouple configuration artifacts from container images, allowing you to manage configurations separately from the application code.
 
