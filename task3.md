@@ -1,4 +1,4 @@
-# Lab 3: Create the backend
+# Task 3: Create the backend
 
 The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us disect it.
 This file will create two resources:

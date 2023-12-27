@@ -1,4 +1,4 @@
-# Lab 1: Basic `kubectl` commands
+# Task 1: Basic `kubectl` commands
 Let us explore our Minikube environment:
 Run the help to learn about the basic commands:
 
@@ -31,7 +31,7 @@ Notice that we can create, delete, get and describe resources. We will later wor
 - Secrets: Very similar to ConfigMaps except it is meant for secret values. We will use Secrets to store Database credentials.
 
 
-### TASK 1.1: Create a deployment
+### Create a deployment
 The following command will instruct K8s to create a deployment and a pod with nginx docker container image `nginx`. It will set alot of defaults as well
 
 ```bash
@@ -95,7 +95,7 @@ Containers:
 ...
 ```
 
-### TASK 1.2: Exploring the pods
+### Exploring the pods
 So far we have created one `deployment` and one `pod`. Use the following to execute commands inside a specific pod (Container): `kubectl exec  <pod-name> -- <Shell Command>` 
 
 ```bash

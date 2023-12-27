@@ -1,4 +1,4 @@
-# Lab 2: Building a sample application
+# Task 2: Building a sample application
 
 Kubernetes support building infrastrucure using configuration files. K8s configuration files are YAML or JSON files used to define and manage Kubernetes resources, such as pods, deployments, services, etc. These files contain specifications that describe the desired state of the resources you want to create or modify within a Kubernetes cluster.
 
