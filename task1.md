@@ -5,7 +5,7 @@ Run the help to learn about the basic commands:
 ```bash
 kubectl -h
 ```
-```bash
+````
 kubectl controls the Kubernetes cluster manager.
 
  Find more information at: https://kubernetes.io/docs/reference/kubectl/
@@ -22,7 +22,7 @@ Basic Commands (Intermediate):
   edit            Edit a resource on the server
   delete          Delete resources by file names, stdin, resources and names, or by resources and label selector
 ...
-```
+````
 Notice that we can create, delete, get and describe resources. We will later work with the following resources:
 - Pods: An abstraction over a container run time such as Docker
 - Deployments: we dont directly work with pods instead we create deployments that could have multple pods doing the same task
