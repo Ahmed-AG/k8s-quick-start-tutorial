@@ -36,6 +36,10 @@ kubectl apply -f example1-mongoApp/mongodb-configmap.yaml
 kubectl apply -f example1-mongoApp/frontend-mongo-express.yaml
 ```
 Give it few minutes for all services to be created then move to the next step.
+You can check status of your pods by running `kubectl get po`. Or run `kubectl get all` to see all of your resources:
+```bash
+kubectl get all
+```
 
 ### Expose the Frontend Service
 ```bash
