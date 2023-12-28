@@ -46,7 +46,7 @@ Once your pods' status change from `ContainerCreating` to `running`, run the fol
 ```bash
 minikube service frontend-mongo-express
 ```
-User `admin` and `pass` to login to Mongo-Express
+Use `admin` and `pass` to login to Mongo-Express
 
 # Cleanup 
 
