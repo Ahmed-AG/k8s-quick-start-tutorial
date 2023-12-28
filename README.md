@@ -3,21 +3,22 @@
 Welcome to this quick start tutorial about Kubertenes (k8s).
 
 ## Learning Objectives
-- Learn basic Kubernetes commands
 - Understand the different Kubernetes component
+- Learn basic Kubernetes commands
 - Build a sample Frontend and Backend application using Kubernetes
 
 ## Prerequisites
 
 - Basic familiarity with Linux Bash commands
-- Basic Familiarity with Containers
+- Basic familiarity with Containers
+  - This is a recommended [Docker Crash Course](https://github.com/Resistor52/DockerCrashCourse/blob/main/README.md) 
 - Any Virtual Machine
 
 # Building a Frontend and Backend sample application 
 ## Detailed Track:
 
 Follow the following tasks to build the application:
-- [Task 0: Set up you testing environment](./task0.md)
+- [Task 0: Set up your testing environment](./task0.md)
 - [Task 1: Basic kubectl commands](./task1.md)
 - [Task 2: Building a sample application](./task2.md)
 - [Task 3: Create the backend](./task3.md)
