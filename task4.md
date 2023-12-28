@@ -92,6 +92,7 @@ Notice that we set the `type` to `LoadBalancer`, which will expose this service 
 ```bash
 kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
 ```
+Give it few minutes for all services to be created then move to the next step.
 
 ## Expose the Frontend using Minikube
 ```bash
@@ -100,7 +101,7 @@ minikube service frontend-mongo-express
 The above commmand will expose `frontend-mongo-express` service and give it a public IP address
 ![Minikube exposing frontend-mongo-express](images/screenshot-minikube-expose.png?raw=true)
 
-You can access the frontend by poiting your broswer to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
+You can access the frontend by pointing your broswer to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
 ![Firefox-mongoexpress](images/screenshot-firefox-mongoexpress.png)
 User `admin` and `pass` to login to Mongo-Express.
 Congratulations! Your Application is built!

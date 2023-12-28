@@ -35,6 +35,8 @@ kubectl apply -f example1-mongoApp/backend-mongo-db.yaml
 kubectl apply -f example1-mongoApp/mongodb-configmap.yaml
 kubectl apply -f example1-mongoApp/frontend-mongo-express.yaml
 ```
+Give it few minutes for all services to be created then move to the next step.
+
 ### Expose the Frontend Service
 ```bash
 minikube service frontend-mongo-express
