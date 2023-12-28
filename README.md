@@ -24,7 +24,7 @@ Follow the following tasks to build the application:
 - [Task 4: Create the frontend](./task4.md)
 
 ## Fast Track:
-Given that you have a K8s environment set, these are the commands needed to build the entire application:
+Given that you have a K8s environment up and running, these are the commands needed to build the entire application:
 ### Create the secret (DB Username and Password)
 ```bash
 kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass
