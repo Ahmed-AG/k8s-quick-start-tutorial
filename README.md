@@ -39,6 +39,8 @@ kubectl apply -f example1-mongoApp/frontend-mongo-express.yaml
 ```bash
 minikube service frontend-mongo-express
 ```
+User `admin` and `pass` to login to Mongo-Express
+
 # Cleanup 
 
 ```bash
