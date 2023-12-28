@@ -17,11 +17,11 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 ## Detailed Track:
 
 Follow the following tasks to build the application:
-- [Task 0: Set up your testing environment](./task0.md)
-- [Task 1: Basic kubectl commands](./task1.md)
-- [Task 2: Building a sample application](./task2.md)
-- [Task 3: Create the backend](./task3.md)
-- [Task 4: Create the frontend](./task4.md)
+- [Task 0: Set up your testing environment](./task0.md){:target="_blank"}
+- [Task 1: Basic kubectl commands](./task1.md){:target="_blank"}
+- [Task 2: Building a sample application](./task2.md){:target="_blank"}
+- [Task 3: Create the backend](./task3.md){:target="_blank"}
+- [Task 4: Create the frontend](./task4.md){:target="_blank"}
 
 ## Fast Track:
 Given that you have a K8s environment up and running, these are the commands needed to build the entire application:
