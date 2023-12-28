@@ -10,8 +10,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 ## Prerequisites
 
 - Basic familiarity with Linux Bash commands
-- Basic familiarity with Containers
-  - This is a recommended [Docker Crash Course](https://github.com/Resistor52/DockerCrashCourse/blob/main/README.md) 
+- Basic familiarity with Containers (This is a recommended [Docker Crash Course](https://github.com/Resistor52/DockerCrashCourse/blob/main/README.md)) 
 - Any Virtual Machine
 
 # Building a Frontend and Backend sample application 
