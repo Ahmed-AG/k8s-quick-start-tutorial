@@ -42,7 +42,7 @@ kubectl get all
 ```
 
 ### Expose the Frontend Service
-Once your pods are `running`, run the following to expose frontend-mongo-express
+Once your pods' status change from `ContainerCreating` to `running`, run the following to expose frontend-mongo-express
 ```bash
 minikube service frontend-mongo-express
 ```
