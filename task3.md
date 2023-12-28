@@ -1,6 +1,6 @@
 # Task 3: Create the Backend
 
-The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us disect it.
+The full configuration file is [here](./example1-mongoApp/backend-mongo-db.yaml). But let us dissect it.
 This file will create two resources:
 - A `Deployment` for the backend
 - A `Service` for that backend
@@ -41,7 +41,7 @@ Next, we need to set the container specification. We have an `Container Image` t
         ports:
         - containerPort: 27017
 ```
-The Next step is for us to configure the username and password for the Database. We can do that by setting the envrinoemnt variables `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` inside the container. The values of those are being referenced from the `mongodb-secret` secret we set earlier.
+The Next step is for us to configure the username and password for the Database. We can do that by setting the environment variables `MONGO_INITDB_ROOT_USERNAME` and `MONGO_INITDB_ROOT_PASSWORD` inside the container. The values of those are being referenced from the `mongodb-secret` secret we set earlier.
 
 ```
         env:
@@ -72,7 +72,7 @@ spec:
       targetPort: 27017
 ```
 
-Notice that we used the `app: backend-mongodb` as a selector and we exposed the same port `27017`. Notice also that we dont have anything that dictates wether we should expose access to this service externally. The default is that we will not.
+Notice that we used the `app: backend-mongodb` as a selector and we exposed the same port `27017`. Notice also that we don't have anything that dictates wether we should expose access to this service externally. The default is that we will not.
 
 ## Apply the Backend
 

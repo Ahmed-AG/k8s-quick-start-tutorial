@@ -1,5 +1,5 @@
-# Task 0: Set up you testing envinoment
-# Intorduction
+# Task 0: Set up you testing environment
+# Introduction
 Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform. It automates the deployment, scaling, and management of containerized applications. Originally developed by Google, Kubernetes has gained widespread adoption in managing containerized workloads and services.
 
 ## Basic Kubernetes Components:
@@ -37,4 +37,4 @@ Follow the steps in the here to install and start Minikube: [https://minikube.si
 `kubectl` is the command-line interface (CLI) used to interact with Kubernetes clusters. It allows users to execute commands against Kubernetes clusters to deploy applications, manage and inspect cluster resources, and perform various administrative tasks.
 
 ### Install kubectl
-kubectl will be configured automatially to authenticate to Minikube during the minikube installation process (check `~/.kube/config`). However, you might still need to install `kubectl` itself. To install `kubectl` Follow the steps here:[https://kubernetes.io/docs/tasks/tools/]( https://kubernetes.io/docs/tasks/tools/)
+kubectl will be configured automatically to authenticate to Minikube during the minikube installation process (check `~/.kube/config`). However, you might still need to install `kubectl` itself. To install `kubectl` Follow the steps here:[https://kubernetes.io/docs/tasks/tools/]( https://kubernetes.io/docs/tasks/tools/)

@@ -5,26 +5,26 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 ## Learning Objectives
 - Learn basic Kubernetes commands
 - Understand the different Kubernetes component
-- Build a sample Frontend and Backend apllication using Kubernetes
+- Build a sample Frontend and Backend application using Kubernetes
 
 ## Prerequisites
 
 - Basic familiarity with Linux Bash commands
 - Basic Familiarity with Containers
-- Any Viritual Machine
+- Any Virtual Machine
 
 # Building a Frontend and Backend sample application 
 ## Detailed Track:
 
 Follow the following tasks to build the application:
-- [Task 0: Set up you testing envinoment](./task0.md)
+- [Task 0: Set up you testing environment](./task0.md)
 - [Task 1: Basic kubectl commands](./task1.md)
 - [Task 2: Building a sample application](./task2.md)
 - [Task 3: Create the backend](./task3.md)
 - [Task 4: Create the frontend](./task4.md)
 
 ## Fast Track:
-Given that you have a K8s envinroment set, these are the commands needed to build the entire application:
+Given that you have a K8s environment set, these are the commands needed to build the entire application:
 ### Create the secret (DB Username and Password)
 ```bash
 kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass

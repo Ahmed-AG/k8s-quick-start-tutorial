@@ -1,5 +1,5 @@
 # Task 4: Create the Frontend
-## Configmap
+## ConfigMap
 A ConfigMap in Kubernetes is an object used to store configuration data in key-value pairs. It provides a way to decouple configuration artifacts from container images, allowing you to manage configurations separately from the application code.
 
 ConfigMaps are commonly used to store non-sensitive, configuration-specific data, such as environment variables, command-line arguments, configuration files, or other settings required by applications running in Kubernetes pods.
@@ -21,7 +21,7 @@ kubectl apply -f example1-mogoApp/mongodb-configmap.yaml
 ```
 
 ## Frontend Deployment:
-First, we need to set up the `Kind` as `Deployment`, the name and the same bacis Replicas and Selector as before
+First, we need to set up the `Kind` as `Deployment`, the name and the same basic Replicas and Selector as before
 
 ```
 apiVersion: apps/v1
@@ -40,7 +40,7 @@ spec:
       labels:
         app: frontend-mongo-express
 ```
-Then, we will set a container image that is preconfigured with MongoExpress: `mongo-express`. We will also set the default port. And we will configure `ME_CONFIG_MONGODB_ADMINUSERNAME` and `ME_CONFIG_MONGODB_ADMINPASSWORD` envineroment variables
+Then, we will set a container image that is preconfigured with MongoExpress: `mongo-express`. We will also set the default port. And we will configure `ME_CONFIG_MONGODB_ADMINUSERNAME` and `ME_CONFIG_MONGODB_ADMINPASSWORD` environment variables
 ```
     spec:
       containers:
@@ -60,7 +60,7 @@ Then, we will set a container image that is preconfigured with MongoExpress: `mo
               name: mongodb-secret
               key: mongo-password
 ```
-The last thing we need to add in the deployment is setting up the Database server name. We will do that using hte ConfigMap data we set earlier
+The last thing we need to add in the deployment is setting up the Database server name. We will do that using the ConfigMap data we set earlier
 ```
         - name: ME_CONFIG_MONGODB_SERVER
           valueFrom: 
@@ -98,10 +98,10 @@ Give it few minutes for all services to be created then move to the next step.
 ```bash
 minikube service frontend-mongo-express
 ```
-The above commmand will expose `frontend-mongo-express` service and give it a public IP address
+The above command will expose `frontend-mongo-express` service and give it a public IP address
 ![Minikube exposing frontend-mongo-express](images/screenshot-minikube-expose.png?raw=true)
 
-You can access the frontend by pointing your broswer to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
+You can access the frontend by pointing your browser to the IP address that was assigned. Notice that Mongo-express allows you to interact with the backend which is the MongoDB server (Service)
 ![Firefox-mongoexpress](images/screenshot-firefox-mongoexpress.png)
 User `admin` and `pass` to login to Mongo-Express.
 Congratulations! Your Application is built!
