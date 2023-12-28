@@ -25,10 +25,10 @@ Basic Commands (Intermediate):
 ...
 ```
 Notice that we can create, delete, get and describe resources. We will later work with the following resources:
-- Pods: An abstraction over a container run time such as Docker
-- Deployments: we dont directly work with pods instead we create deployments that could have multple pods doing the same task
-- Services: Provide way to access a set of deployments (and so pods), typically through an endpoint (IP Adress and Names)
-- ConfigMaps: We will use ConfigmMps to store information that is needed accross deployments
+- Pods: An abstraction over a container run time such as Docker.
+- Deployments: we dont directly work with pods. Instead, we create deployments that could have one or mulitple pods performing the same task.
+- Services: Provide way to access a set of deployments (and therefore pods), typically through an endpoint (IP Adresses and Names).
+- ConfigMaps: We will use ConfigmMps to store information that is needed accross deployments.
 - Secrets: Very similar to ConfigMaps except it is meant for secret values. We will use Secrets to store Database credentials.
 
 
@@ -60,7 +60,7 @@ NAME                                                READY   STATUS    RESTARTS  
 nginx-7854ff8877-6wq4n                              1/1     Running   0          3m23s
 ```
 
-We can use the `-o wide` option:
+We can use the `-o wide` option to show more information such as the IP addresses:
 
 ```bash
 kubectl get pods -o wide
