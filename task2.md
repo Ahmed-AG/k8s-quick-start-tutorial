@@ -17,7 +17,7 @@ We have three configuration files being used for this tutorial. You can find the
 
 # Build a sample application
 In this example, we will build a sample application that consists of the following:
-1. A MongoDB as the `Backend` and. Accessable only for the front end and consists of one Pod
+1. A MongoDB as the `Backend`. Accessable only for the front end and consists of one Pod
 2. A Mongo-express as the `Frontend`. Accessiable from the outside and consits of one Pod
 
 To do that, we will use three different configration files as follows:

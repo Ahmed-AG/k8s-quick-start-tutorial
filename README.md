@@ -31,9 +31,9 @@ kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongo
 ```
 ### Create Backend, ConfigMap and FrontEnd
 ```bash
-kubectl apply -f example1-mogoApp/backend-mongo-db.yaml
-kubectl apply -f example1-mogoApp/mongodb-configmap.yaml
-kubectl apply -f example1-mogoApp/frontend-mongo-express.yaml
+kubectl apply -f example1-mognoApp/backend-mongo-db.yaml
+kubectl apply -f example1-mognoApp/mongodb-configmap.yaml
+kubectl apply -f example1-mognoApp/frontend-mongo-express.yaml
 ```
 ### Expose the Frontend Service
 ```bash
