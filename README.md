@@ -13,7 +13,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 - Basic familiarity with Containers (This is a recommended [Docker Crash Course](https://github.com/Resistor52/DockerCrashCourse/blob/main/README.md)) 
 - Any Virtual Machine
 
-# k8s Quick Start Tutorial
+# K8s Quick Start Tutorial
 ## Detailed Track:
 
 Follow the following tasks to build the application:
