@@ -130,3 +130,20 @@ frontend-mongo-express   LoadBalancer   10.111.153.234   <pending>     8081:3000
 ```
 
 Nice! Now you have two versions running on different ports! But that is not the best way to do that! A better way would be to use a placeholder with `sed` to dynamically set the `nodePort`. The other option is to use [HELM Charts](https://helm.sh/docs/topics/charts/). We will cover HELM in a later task.
+
+## Cleanup
+```bash
+deployment=blue
+kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass --namespace $deployment
+kubectl delete -f example1-mongoApp/backend-mongo-db.yaml --namespace $deployment
+kubectl delete -f example1-mongoApp/mongodb-configmap.yaml --namespace $deployment
+kubectl delete -f example1-mongoApp/frontend-mongo-express.yaml --namespace $deployment
+```
+
+```bash
+deployment=green
+kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass --namespace $deployment
+kubectl delete -f example1-mongoApp/backend-mongo-db.yaml --namespace $deployment
+kubectl delete -f example1-mongoApp/mongodb-configmap.yaml --namespace $deployment
+kubectl delete -f example1-mongoApp/frontend-mongo-express.yaml --namespace $deployment
+```
