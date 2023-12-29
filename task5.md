@@ -115,5 +115,20 @@ kubectl apply -f example1-mongoApp/frontend-mongo-express-green.yaml --namespace
 sleep 60
 minikube service frontend-mongo-express -n $deployment
 ```
+To verify your work you can use your browser or run:
+```bash
+kubectl get services -n blue
+kubectl get services -n green
+```
+```
+$ kubectl get services -n blue
+NAME                     TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+backend-mongodb          ClusterIP      10.104.133.115   <none>        27017/TCP        19h
+frontend-mongo-express   LoadBalancer   10.102.67.181    <pending>     8081:30000/TCP   19h
+$ kubectl get services -n green
+NAME                     TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+backend-mongodb          ClusterIP      10.96.81.254     <none>        27017/TCP        19h
+frontend-mongo-express   LoadBalancer   10.111.153.234   <pending>     8081:30001/TCP   8m16s
+```
 
 Nice! Now you have two versions running on different ports! But that is not the best way to do that! A Better way would be to use [HELM Charts](https://helm.sh/docs/topics/charts/). We will cover HELM in a later task.
