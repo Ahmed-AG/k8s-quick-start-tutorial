@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-mongo-express-deployment-1
+  name: frontend-mongo-express-deployment
   labels:
     app: frontend-mongo-express
 spec:
@@ -39,7 +39,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-mongo-express-1
+  name: frontend-mongo-express
 spec:
   selector:
     app: frontend-mongo-express

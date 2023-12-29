@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: frontend-ingress
+  # namespace: kubernetes-dashboard
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: frontend-ingress
+    http:
+      paths:
+      - path: /
+        pathType: Exact  
+        backend:
+          service:
+            name: frontend-mongo-express
+            port: 
+              number: 8081
