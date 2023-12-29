@@ -9,7 +9,8 @@ To explore namespaces run the following:
 ```bash
 kubectl get namespaces
 ```
-```$ kubectl get namespaces
+```
+$ kubectl get namespaces
 NAME              STATUS   AGE
 default           Active   17h
 kube-node-lease   Active   17h
