@@ -44,16 +44,13 @@ Let us first clean up the previous deployments we have:
 kubectl delete -f example1-mongoApp/backend-mongo-db.yaml
 kubectl delete -f example1-mongoApp/mongodb-configmap.yaml
 kubectl delete -f example1-mongoApp/frontend-mongo-express.yaml
-```
-We also need to delete the secret:
-```bash
 kubectl delete secret mongodb-secret
 ```
 Verify your work by running:
 ```bash
 kubectl get all
 ```
-Now that we have a clean slate,let us create our two namespaces:
+Now that we have a clean slate, let us create our two namespaces:
 ```bash
 kubectl create namespace blue
 kubectl create namespace green
@@ -68,7 +65,7 @@ kubectl apply -f example1-mongoApp/frontend-mongo-express.yaml --namespace $depl
 ```
 
 Notice that we are using the `$deployment` variable to simulate what we would do in a deployment pipeline.
-Let us check out work:
+Let us check out our work:
 ```bash
 kubectl get all
 ```
@@ -132,4 +129,4 @@ backend-mongodb          ClusterIP      10.96.81.254     <none>        27017/TCP
 frontend-mongo-express   LoadBalancer   10.111.153.234   <pending>     8081:30001/TCP   8m16s
 ```
 
-Nice! Now you have two versions running on different ports! But that is not the best way to do that! A Better way would be to use [HELM Charts](https://helm.sh/docs/topics/charts/). We will cover HELM in a later task.
+Nice! Now you have two versions running on different ports! But that is not the best way to do that! A better way would be to use a placeholder with `sed` to dynamically set the `nodePort`. The other option is to use [HELM Charts](https://helm.sh/docs/topics/charts/). We will cover HELM in a later task.
