@@ -105,5 +105,15 @@ The Service "frontend-mongo-express" is invalid: spec.ports[0].nodePort: Invalid
 ❌  Exiting due to SVC_NOT_FOUND: Service 'frontend-mongo-express' was not found in 'green' namespace.
 You may select another namespace by using 'minikube service frontend-mongo-express -n <namespace>'. Or list out all the services using 'minikube service list'
 ```
+To fix that, we can create another version of `example1-mongoApp/frontend-mongo-express.yaml` with a different port. We have created one that has `nodePort: 3001` located in `example1-mongoApp/frontend-mongo-express-green.yaml`. Let us try again using the green version:
+```bash
+deployment=green
+kubectl create secret generic mongodb-secret --from-literal=mongo-username=mongouser --from-literal=mongo-password=mongopass --namespace $deployment
+kubectl apply -f example1-mongoApp/backend-mongo-db.yaml --namespace $deployment
+kubectl apply -f example1-mongoApp/mongodb-configmap.yaml --namespace $deployment
+kubectl apply -f example1-mongoApp/frontend-mongo-express-green.yaml --namespace $deployment
+sleep 60
+minikube service frontend-mongo-express -n $deployment
+```
 
-#TODO: change port 3000
+Nice! Now you have two versions running on different ports! But that is not the best way to do that! A Better way would be to use [HELM Charts](https://helm.sh/docs/topics/charts/). We will cover HELM in a later task.
