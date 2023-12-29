@@ -43,7 +43,7 @@ metadata:
 spec:
   selector:
     app: frontend-mongo-express
-  type: LoadBalancer  
+  # type: LoadBalancer  
   ports:
     - protocol: TCP
       port: 8081

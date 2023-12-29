@@ -14,5 +14,8 @@ kubectl apply -f example2-mongoApp/ingress.yaml
 ```
 
 ```bash
-echo "
+IP=$(kubectl get ingress -o json |jq -r .items[].status.loadBalancer.ingress[].ip)
+echo $IP
+sudo echo  >> /etc/hosts
+sudo -- sh -c "echo '$IP my-frontend.com' >> /etc/hosts"
 ```
