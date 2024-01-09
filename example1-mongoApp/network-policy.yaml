@@ -4,9 +4,9 @@ metadata:
   name: network-policy
   # namespace: default
 spec:
-  podSelector:
-    matchLabels:
-      app: backend-mongodb
+  # podSelector:
+  #   matchLabels:
+  #     app: backend-mongodb
   policyTypes:
     - Ingress
     # - Egress
