@@ -11,11 +11,11 @@ spec:
     - Ingress
     # - Egress
   ingress:
-    - from:
-        - ipBlock:
-            cidr: 10.244.0.0/16
-            except:
-              - 10.244.0.0/24
+    # - from:
+    #     - ipBlock:
+    #         cidr: 10.244.0.0/16
+    #         except:
+    #           - 10.244.0.0/24
       #   - namespaceSelector:
       #       matchLabels:
       #         project: myproject
