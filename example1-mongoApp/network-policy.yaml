@@ -2,7 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: network-policy
-  # namespace: default
 spec:
   podSelector:
     matchLabels:
@@ -14,14 +13,14 @@ spec:
     - from:
         # - ipBlock:
         #     cidr: 10.244.0.0/16
-            # except:
-            #   - 10.244.120.80/32
-        # - namespaceSelector:
-        #     matchLabels:
-        #       kubernetes.io/metadata.name: blue
+        #     except:
+        #       - 10.244.120.80/32
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: green
         - podSelector:
             matchLabels:
-              app: backend-mongodb
+              app: frontend-mongo-express
       # ports:
       #   - protocol: TCP
       #     port: 6379
@@ -32,4 +31,3 @@ spec:
   #     ports:
   #       - protocol: TCP
   #         port: 5978
-
