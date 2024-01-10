@@ -16,9 +16,9 @@ spec:
     #         cidr: 10.244.0.0/16
     #         except:
     #           - 10.244.120.82/32
-      #   - namespaceSelector:
-      #       matchLabels:
-      #         project: myproject
+        - namespaceSelector:
+            matchLabels:
+              name: blue
       #   - podSelector:
       #       matchLabels:
       #         role: frontend
