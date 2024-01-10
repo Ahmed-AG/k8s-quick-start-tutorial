@@ -14,11 +14,11 @@ spec:
     - from:
         - ipBlock:
             cidr: 10.244.0.0/16
-            except:
-              - 10.244.120.80/32
-        # - namespaceSelector:
-        #     matchLabels:
-        #       name: blue
+            # except:
+            #   - 10.244.120.80/32
+        - namespaceSelector:
+            matchLabels:
+              name: blue
       #   - podSelector:
       #       matchLabels:
       #         app: backend-mongodb
