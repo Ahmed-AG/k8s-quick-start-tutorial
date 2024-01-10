@@ -14,8 +14,8 @@ spec:
     - from:
         - ipBlock:
             cidr: 10.244.0.0/16
-    #         except:
-    #           - 10.244.0.0/24
+            except:
+              - 10.244.122.82/32
       #   - namespaceSelector:
       #       matchLabels:
       #         project: myproject
