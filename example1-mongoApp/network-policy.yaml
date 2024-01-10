@@ -18,7 +18,7 @@ spec:
             #   - 10.244.120.80/32
         - namespaceSelector:
             matchLabels:
-              name: blue
+              name: green
       #   - podSelector:
       #       matchLabels:
       #         app: backend-mongodb
