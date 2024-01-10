@@ -16,12 +16,12 @@ spec:
         #     cidr: 10.244.0.0/16
             # except:
             #   - 10.244.120.80/32
-        - namespaceSelector:
+        # - namespaceSelector:
+        #     matchLabels:
+        #       kubernetes.io/metadata.name: blue
+        - podSelector:
             matchLabels:
-              kubernetes.io/metadata.name: blue
-      #   - podSelector:
-      #       matchLabels:
-      #         app: backend-mongodb
+              app: backend-mongodb
       # ports:
       #   - protocol: TCP
       #     port: 6379
