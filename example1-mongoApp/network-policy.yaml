@@ -18,7 +18,7 @@ spec:
     #           - 10.244.120.82/32
         - namespaceSelector:
             matchLabels:
-              name: blue
+              kubernetes.io/metadata.name=blue
       #   - podSelector:
       #       matchLabels:
       #         role: frontend
