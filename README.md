@@ -16,12 +16,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 # K8s Quick Start Tutorial
 ## Detailed Track:
 
-Follow the following tasks to build the application:
-- [Task 0: Set up your testing environment](./task0.md)
-- [Task 1: Basic kubectl commands](./task1.md)
-- [Task 2: Building a sample application](./task2.md)
-- [Task 3: Create the backend](./task3.md)
-- [Task 4: Create the frontend](./task4.md)
+Please check (https://cyberdojo.cloud/read/Kubernetes-crash-course.html)[https://cyberdojo.cloud/read/Kubernetes-crash-course.html] for the detailed track. 
 
 ## Fast Track:
 Given that you have a K8s environment up and running, these are the commands needed to build the entire application:
