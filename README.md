@@ -16,7 +16,7 @@ Welcome to this quick start tutorial about Kubertenes (k8s).
 # K8s Quick Start Tutorial
 ## Detailed Track:
 
-Please check (https://cyberdojo.cloud/read/Kubernetes-crash-course.html)[https://cyberdojo.cloud/read/Kubernetes-crash-course.html] for the detailed track. 
+Please check (Kubernetes Crash Course)[https://cyberdojo.cloud/read/Kubernetes-crash-course.html] for the detailed track. 
 
 ## Fast Track:
 Given that you have a K8s environment up and running, these are the commands needed to build the entire application:
